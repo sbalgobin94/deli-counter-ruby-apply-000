@@ -1,3 +1,4 @@
+#takes argument
 def line(katz_deli)
   i = 0
   output = ""
@@ -12,10 +13,18 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
-end
+# def take_a_number(katz_deli, name)
+#   katz_deli << name
+#   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# end
+
+  $i = 0
+def take_a_number(katz_deli)
+  $i += 1
+  katz_deli << $i 
+  puts "Welcome, you are number #{i} in line."
+end 
+  
 
 def now_serving(katz_deli)
   if katz_deli.length == 0
