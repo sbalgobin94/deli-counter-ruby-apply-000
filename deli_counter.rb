@@ -21,10 +21,10 @@ end
   $i = 0
 def take_a_number(katz_deli)
   $i += 1
-  katz_deli << $i 
+  katz_deli << $i
   puts "Welcome, you are number #{i} in line."
-end 
-  
+end
+
 
 def now_serving(katz_deli)
   if katz_deli.length == 0
